@@ -1,0 +1,31 @@
+/*.adress-box {
+    width: calc((100% - 60px) / 4);
+}*/
+
+.logo-footer {
+    margin-bottom: 20px;
+    color: $primary-white-color;
+}
+
+.aside {
+    margin-top: 20px;
+    margin-bottom: 9px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-white-color;
+}
+
+.link-footer {
+    margin-bottom: 9px;
+
+    color: $footer-link-color;
+    font-style: normal;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+}
+

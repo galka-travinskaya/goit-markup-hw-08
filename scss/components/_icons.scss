@@ -1,0 +1,33 @@
+/*.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.card-icon a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: $primary-icon-color;
+
+    transition: background-color 250ms $transition-timing-function;
+}
+
+.card-icon:hover a,
+.card-icon:focus a {
+    background-color: $accent-color;
+    color: $primary-white-color;
+    fill: currentColor;
+}
+
+/*.card-icon:not(:nth-child(4n)) {
+    margin-right: 10px;
+}*/
+
+.icon-link {
+    width: 20px;
+    height: 20px;
+}
