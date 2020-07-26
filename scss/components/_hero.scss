@@ -53,14 +53,9 @@
     text-transform: uppercase;
     text-align: center;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (max-width: 1199px) {
         font-size: 26px;
         line-height: 1.61;       
-    }
-    
-    @media screen and (min-width: 768px) {
-        font-size: 26px;
-        line-height: 1.61;
     }
 
     @media screen and (min-width: 1200px) {

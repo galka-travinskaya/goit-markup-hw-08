@@ -46,12 +46,23 @@ img {
 }
 
 .logo {
-  /*padding-top: 16px;
-    padding-bottom: 16px;*/
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+@media screen and (max-width: 1199px) {
+  .logo {
+    font-size: 24px;
+    line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo-web {
@@ -68,8 +79,6 @@ img {
 @media screen and (max-width: 767px) {
   .container {
     width: 480px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -107,12 +116,25 @@ img {
 }
 
 .section-title {
-  /*margin-bottom: 50px;*/
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 0.85;
   text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .section-title {
+    margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 1.17;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 0.85;
+  }
 }
 
 .backdrop.is-hidden {
@@ -144,6 +166,19 @@ img {
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+.socials {
+  margin-bottom: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  letter-spacing: 0.03em;
+  /*@media screen and (max-width: 1199px) {
+        margin-bottom: ;
+    }*/
 }
 
 .container-portfolio {
@@ -408,14 +443,20 @@ address {
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
   /*display: flex;
         justify-content: space-between;
         align-items: center;*/
 }
 
-/*.adress-box {
-    width: calc((100% - 60px) / 4);
-}*/
+.adress-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*width: calc((100% - 60px) / 4);*/
+  margin-bottom: 60px;
+}
+
 .logo-footer {
   margin-bottom: 20px;
   color: #FFFFFF;
@@ -423,7 +464,7 @@ address {
 
 .aside {
   margin-top: 20px;
-  margin-bottom: 9px;
+  /*margin-bottom: 9px;*/
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -431,26 +472,34 @@ address {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1199px) {
+  .aside {
+    margin-bottom: 8px;
+  }
+}
+
+.adress-link {
+  margin-bottom: 8px;
+}
+
+.adress-link:last-child {
+  margin-bottom: 0px;
+}
+
 .link-footer {
-  margin-bottom: 9px;
+  /*margin-bottom: 9px;*/
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
 
-.link-footer:last-child {
-  margin-bottom: 0px;
+.social-link {
+  /*width: calc((100% - 60px) / 4);*/
 }
 
-/*.social-link {
-    width: calc((100% - 60px) / 4);
-}*/
-.socials {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #FFFFFF;
+@media screen and (max-width: 1199px) {
+  .social-link {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-list {
@@ -460,6 +509,14 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-icon a {
@@ -481,9 +538,10 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*.footer-icon:not(:last-child) {
-    margin-right: 10px;
-}*/
+.footer-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
 .footer-icon .icon-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -510,14 +568,20 @@ address {
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
+  text-align: center;
   /*display: flex;
         justify-content: space-between;
         align-items: center;*/
 }
 
-/*.adress-box {
-    width: calc((100% - 60px) / 4);
-}*/
+.adress-box {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  /*width: calc((100% - 60px) / 4);*/
+  margin-bottom: 60px;
+}
+
 .logo-footer {
   margin-bottom: 20px;
   color: #FFFFFF;
@@ -525,7 +589,7 @@ address {
 
 .aside {
   margin-top: 20px;
-  margin-bottom: 9px;
+  /*margin-bottom: 9px;*/
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
@@ -533,26 +597,34 @@ address {
   color: #FFFFFF;
 }
 
+@media screen and (max-width: 1199px) {
+  .aside {
+    margin-bottom: 8px;
+  }
+}
+
+.adress-link {
+  margin-bottom: 8px;
+}
+
+.adress-link:last-child {
+  margin-bottom: 0px;
+}
+
 .link-footer {
-  margin-bottom: 9px;
+  /*margin-bottom: 9px;*/
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
 }
 
-.link-footer:last-child {
-  margin-bottom: 0px;
+.social-link {
+  /*width: calc((100% - 60px) / 4);*/
 }
 
-/*.social-link {
-    width: calc((100% - 60px) / 4);
-}*/
-.socials {
-  margin-bottom: 20px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  text-transform: uppercase;
-  color: #FFFFFF;
+@media screen and (max-width: 1199px) {
+  .social-link {
+    margin-bottom: 60px;
+  }
 }
 
 .footer-list {
@@ -562,6 +634,14 @@ address {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-icon a {
@@ -583,9 +663,10 @@ address {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/*.footer-icon:not(:last-child) {
-    margin-right: 10px;
-}*/
+.footer-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
 .footer-icon .icon-link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -629,6 +710,12 @@ address {
   background-color: #2F303A;
 }
 
+@media screen and (max-width: 1199px) {
+  .subscribe input {
+    margin-bottom: 20px;
+  }
+}
+
 .button-footer {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -639,7 +726,7 @@ address {
   background-color: #2196F3;
   color: #FFFFFF;
   background-size: contain;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
