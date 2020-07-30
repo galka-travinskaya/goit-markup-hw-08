@@ -5,10 +5,19 @@
         padding-top: 60px;
         padding-bottom: 60px;
         text-align: center;
-    
-        /*display: flex;
-        justify-content: space-between;
-        align-items: center;*/
+        
+        @media screen and (min-width: 768px) and (max-width: 1199px) {
+            display: inline-flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-around;
+        }
+
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            max-width: 100%;
+        }
     }
 }
-

@@ -1,15 +1,32 @@
 .filters {
     display: inline-block;
     display: flex;
-    margin-bottom: 34px;
-    justify-content: center;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 767px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 768px) {
+        justify-content: center;
+    }
 }
 
 .site-filter {
-    margin-right: 8px;
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
 
-    &:last-child {
-        margin-right: 0px;
+    @media screen and (min-width: 768px) {
+        margin-bottom: 30px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 50px;
+    }
+
+    &:not(:last-child) {
+        margin-right: 8px;
     }
 }
 
@@ -27,6 +44,7 @@
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
+    letter-spacing: 0.03em;
 
     transition: color 250ms $transition-timing-function;
 

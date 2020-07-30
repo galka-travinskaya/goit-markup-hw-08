@@ -14,38 +14,48 @@
         <header class="page-header">
             <div class="container">
                 <div class="main-page">
-                    <nav class="main-nav">
                         <a href="#" class="logo">
                             <span class="logo-web">Web</span> 
-                            <span class="logo-header">Studio</span>
-                        </a>
+                        <span class="logo-header">Studio</span></a>
+                    <button 
+                        type="button" 
+                        class="menu-button is-open" 
+                        aria-expanded="false" 
+                        aria-controls="main-nav"
+                        data-menu-button>
+                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="icon-menu" href="./images/spriteNew.svg#icon-menu_40px-1"></use>
+                                <use class="icon-cross" href="./images/spriteNew.svg#icon-close_40px-1"></use>
+                            </svg>
+                    </button>
+                    <nav class="main-nav" id="main-nav" data-menu>  
                         <ul class="site-nav">
                             <li class="item"><a href="index.html" class="link current">Студия</a></li>
                             <li class="item"><a href="portfolio.html" class="link">Портфолио</a></li>
                             <li class="item"><a href="#" class="link">Контакты</a></li>
-                        </ul> 
-                    </nav>
-    
-                    <address>
-                        <ul class="contacts">
-                            <li class="contacts-item">
-                                <a href="mailto:info@devstudio.com" class="contact-link">
-                                    <svg class="icon-contacts" width="16" height="11.2">
-                                        <use href="./images/sprite.svg#icon-envelope"></use>
-                                    </svg>    
-                                    info@devstudio.com
-                                </a> 
-                            </li>
-                            <li class="item">
-                                <a href="tel:+380961111111" class="contact-link">
-                                    <svg class="icon-contacts" width="10" height="14.94">
-                                        <use href="./images/sprite.svg#icon-Vector"></use>
-                                    </svg>
-                                    +38 096 111 11 11
-                                </a>           
-                            </li>
-                        </ul>  
-                    </address>         
+                        </ul>
+                        
+                        <address class="address-header">
+                            <ul class="contacts">
+                                <li class="contacts-item">
+                                    <a href="mailto:info@devstudio.com" class="contact-link">
+                                        <svg class="icon-contacts" width="16" height="12">
+                                            <use href="./images/sprite.svg#icon-envelope"></use>
+                                        </svg>    
+                                        info@devstudio.com
+                                    </a> 
+                                </li>
+                                <li class="contacts-item">
+                                    <a href="tel:+380961111111" class="contact-link">
+                                        <svg class="icon-contacts" width="10" height="15">
+                                            <use href="./images/sprite.svg#icon-Vector"></use>
+                                        </svg>
+                                        +38 096 111 11 11
+                                    </a>           
+                                </li>
+                            </ul>  
+                        </address> 
+                    </nav>     
                 </div>
             </div>
         </header>
@@ -54,9 +64,8 @@
             <section class="hero">
                 <div class="hero-box">
                     <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-                <button class="button-primary" data-modal-open>Заказать услугу</button>
-                </div>
-                
+                    <button class="button-primary" data-modal-open>Заказать услугу</button>
+                </div> 
             </section>
 
             <section class="section">
@@ -124,21 +133,30 @@
                     <h2 class="section-title">Чем мы занимаемся</h2>
                     <ul class="works-item">
                         <li class="site-menu">
-                            <a href="#">
-                                <img src="./images/Note.jpg" alt="Открытый ноутбук" width="370" height="294"/>
-                            </a>
+                            <picture>
+                                <a href="#">
+                                    <source srcset="./images/Growing-Desk.webp" type="image/webp"/>
+                                    <img src="./images/Growing-Desk.jpg" alt="Открытый ноутбук" width="370" height="294"/>
+                                </a>
+                            </picture>
                             <h3 class="item-title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </li>
                         <li class="site-menu">
-                            <a href="#">
-                                <img src="./images/box2.jpg" alt="Мобилка" width="370" height="294"/>
-                            </a>
+                            <picture>
+                                <a href="#">
+                                    <source srcset="./images/Box-Desk.webp" type="image/webp"/>
+                                    <img src="./images/Box-Desk.jpg" alt="Открытый ноутбук" width="370" height="294"/>
+                                </a>
+                            </picture>
                             <h3 class="item-title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3> 
                         </li>
                         <li class="site-menu">
-                            <a href="#">
-                                <img src="./images/Monitor.jpg" alt="Монитор" width="370" height="294"/>
-                            </a>
+                            <picture>
+                                <a href="#">
+                                    <source srcset="./images/Inspiration-Desk.webp" type="image/webp"/>
+                                    <img src="./images/Inspiration-Desk.jpg" alt="Открытый ноутбук" width="370" height="294"/>
+                                </a>
+                            </picture>
                             <h3 class="item-title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                         </li>
                     </ul>
@@ -150,7 +168,19 @@
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="team-cards">
                         <li class="cards-item">
-                            <img src="./images/JohnSmith.jpg" alt="Фотография Джона Смита" width="270" height="260"/>
+                            <img 
+                                srcset="
+                                    ./images/JohnSmith-Mob.jpg 1x,
+                                    ./images/JohnSmith-Mob@2x.jpg 2x,
+                                    ./images/JohnSmith-Tab.jpg 1x,
+                                    ./images/JohnSmith-Tab@2x.jpg 2x,
+                                    ./images/JohnSmith-Desk.jpg 1x,
+                                    ./images/JohnSmith-Desk@2x.jpg 2x"
+
+                                    src="./images/JohnSmith-Mob.jpg"
+                                    alt="Фотография Джона Смита"
+                                    width="450"
+                                    height="320" />
                             <div class="team-content">
                                 <h3 class="headline">Николай Кучеренко</h3>
                                 <p class="text">
@@ -189,7 +219,19 @@
                             </div>
                         </li>
                         <li class="cards-item">
-                            <img src="./images/MartaStewart.jpg" alt="Фотография Марты Стюарт" width="270" height="260"/>
+                            <img 
+                                srcset="
+                                    ./images/MartaStewart-Mob.jpg 1x,
+                                    ./images/MartaStewart-Mob@2x.jpg 2x,
+                                    ./images/MartaStewart-Tab.jpg 1x,
+                                    ./images/MartaStewart-Tab@2x.jpg 2x,
+                                    ./images/MartaStewart-Desk.jpg 1x,
+                                    ./images/MartaStewart-Desk@2x.jpg 2x"
+
+                                    src="./images/MartaStewart-Mob.jpg"
+                                    alt="Фотография Ольги Ивановой"
+                                    width="450"
+                                    height="320" />
                             <div class="team-content">
                                 <h3 class="headline">Ольга Иванова</h3>
                                 <p class="text">
@@ -228,7 +270,19 @@
                             </div>  
                         </li>
                         <li class="cards-item">
-                            <img src="./images/RobertJakis.jpg" alt="Фотография Роберта Джейкиса" width="270" height="260"/>
+                            <img 
+                                srcset="
+                                    ./images/RobertJakis-Mob.jpg 1x,
+                                    ./images/RobertJakis-Mob@2x.jpg 2x,
+                                    ./images/RobertJakis-Tab.jpg 1x,
+                                    ./images/RobertJakis-Tab@2x.jpg 2x,
+                                    ./images/RobertJakis-Desk.jpg 1x,
+                                    ./images/RobertJakis-Desk@2x.jpg 2x"
+
+                                    src="./images/RobertJakis-Mob.jpg"
+                                    alt="Фотография Андрея Шевченко"
+                                    width="450"
+                                    height="320" />
                             <div class="team-content">
                                 <h3 class="headline">Андрей Шевченко</h3>
                                 <p class="text">
@@ -267,7 +321,19 @@
                             </div>  
                         </li>
                         <li class="cards-item">
-                            <img src="./images/MartinDoe.jpg" alt="Фотография Мартина Доу" width="270" height="260"/>
+                            <img 
+                                srcset="
+                                    ./images/MartinDoe-Mob.jpg 1x,
+                                    ./images/MartinDoe-Mob@2x.jpg 2x,
+                                    ./images/MartinDoe-Tab.jpg 1x,
+                                    ./images/MartinDoe-Tab@2x.jpg 2x,
+                                    ./images/MartinDoe-Desk.jpg 1x,
+                                    ./images/MartinDoe-Desk@2x.jpg 2x"
+
+                                    src="./images/MartinDoe-Mob.jpg"
+                                    alt="Фотография Ивана Николаева"
+                                    width="450"
+                                    height="320" />
                             <div class="team-content">
                                 <h3 class="headline">Иван Николаев</h3>
                                 <p class="text">
@@ -368,7 +434,7 @@
                         <span class="logo-web">Web</span> 
                         <span class="logo-footer">Studio</span>
                     </a>
-                    <address>
+                    <address class="address-footer">
                         <ul>
                             <li class="adress-link"><p class="aside">г. Киев, пр-т Леси Украинки, 26</p></li>
                             <li class="adress-link"><a href="mailto:info@example.com" class="link-footer">info@example.com</a><br /></li>
@@ -485,15 +551,19 @@
                                value="policy" 
                                id="policy"/>
                         
-                        <label class="checkbox-label" for="policy">Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></label>
+                        <label class="checkbox-label" for="policy">
+                            <span>Соглашаюсь с рассылкой и принимаю 
+                                <a href="#">Условия договора</a>
+                            </span>
+                        </label>
                     </div>
                     
-                
                     <button type="submit" class="button-submit" data-modal-close>Отправить</button>
                 </form>
             </div>
         </div>
 
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
     </body>
 </html>

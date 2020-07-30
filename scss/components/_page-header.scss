@@ -1,49 +1,131 @@
-/*.page-header {
+.page-header {
     border-bottom: 1px solid #EEEEEE;
+    @media screen and (max-width: 767px) {
+        position: relative; 
+    }
 }
 
 .main-page {
+    min-height: 60px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
 .main-nav {
-    display: flex;
-    align-items: center;
-}*/
+    @media screen and (max-width: 767px) {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        background-color: $primary-white-color;
+        text-align: center;
+
+        z-index: 1;
+
+        &.is-open {
+            display: block;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
 
 .logo-header {
     color: $logo-black-color;
 }
 
-/*.site-nav {
-    display: flex;
-    margin-left: 85px;
+.menu-button {
+    @media screen and (max-width: 767px) {
+        display: inline-flex;
+        margin: 0;
+        padding: 0;
+        border: none;
+        outline: none;
+        background-color: $primary-white-color;
+    
+        & .icon-cross {
+            display: block;
+        }
+
+        & .icon-menu {
+            display: none;
+        }
+
+        &.is-open .icon-menu {
+            display: block;
+        }
+    
+        &.is-open .icon-cross {
+            display: none;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
+}
+
+.menu-button:hover svg,
+.menu-button:focus svg {
+    fill: $accent-color;
+}
+
+.site-nav {
+    @media screen and (max-width: 767px) {
+        display: inline-block;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 768px) {
+        display: flex; 
+    }
 }
     
-.item {
-    margin-right: 50px;
+.item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
 
-    &:last-child {
-        margin-right: 0px;
+    @media screen and (min-width: 768px) {
+        margin-right: 50px;
     }
 }
 
 .link {
     display: block;
-    padding-top: 32px;
-    padding-bottom: 32px;
     
-     color: $title-text-color;
+    color: $title-text-color;
     font-family: $font-text;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
+    letter-spacing: 0.02em;
     
     transition: background-color 2000ms $transition-timing-function;
 
+    @media screen and (max-width: 767px) {
+        padding-top: 8px;
+        padding-bottom: 8px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
     &.current {
         position: relative;
+        display: block;
         color: $accent-color;
     }
 
@@ -62,51 +144,91 @@
     }    
 }
 
-.link {
-    color: $title-text-color;
+.link:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+    }
 }
 
-address {
-    margin-left: auto;
+.address-header {
     font-style: normal;
+
+    @media screen and (min-width: 768px) {
+        margin-left: 84px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 305px;
+    }
 }
 
 .contacts {
-    display: flex;
-    align-items: center;
-
     transition: fill 250ms $transition-timing-function;
+
+    @media screen and (min-width: 1200px) {
+        display: inline-flex;
+    }
 }
 
 .contacts-item {
-    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+}
 
-    &:last-child {
-        margin-right: 0px;
+.contacts-item:not(:last-child) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 16px;
+    }
+
+    @media screen and (min-width: 768px) {
+        margin-bottom: 10px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 30px;
     }
 }
 
 .icon-contacts {
-    display: inline-block;
-    margin-right: 10px;
+    display: inline-flex;
     fill: $primary-text-color;
     align-items: center;
+
+    @media screen and (max-width: 1199px) {
+        margin-right: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-right: 10px;
+    }
 }
 
 .contact-link {
+    display: inline-flex;
     font-style: normal;
     color: $primary-text-color;
 
     transition: fill 250ms $transition-timing-function,
     color 250ms $transition-timing-function;
 
+    @media screen and (min-width: 480px) {
+        font-size: 12px;
+        line-height: 1.16;
+        letter-spacing: 0.02em;
+    }
+
+    @media screen and (min-width: 1200px) {
+        font-size: 14px;
+        line-height: 1.14;
+    }
+
     &:hover,
     &:focus {
-    color: $accent-color;
+        color: $accent-color;
     }
 
     &:hover svg,
     &:focus svg {
-    fill: currentColor
+        fill: currentColor;
     }
-}*/    
+}

@@ -1,11 +1,16 @@
-/*.mailing {
-    width: calc((100% - 60px) / 2);
-}*/
+.mailing {
+    @media screen and (min-width: 1200px) {
+        width: calc((100% - 60px) / 2);
+    }
+}
 
 .subscribe {
-    /*display: flex;*/
     margin: 0;
     padding: 0;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
 
     & input {
         width: 100%;
