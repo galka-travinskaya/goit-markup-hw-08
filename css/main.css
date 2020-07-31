@@ -306,6 +306,7 @@ img {
 
 .menu-button:hover svg,
 .menu-button:focus svg {
+  outline: none;
   fill: #2196F3;
 }
 
@@ -416,9 +417,9 @@ img {
 }
 
 .contacts-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -443,9 +444,7 @@ img {
 }
 
 .icon-contacts {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: inline-block;
   fill: #757575;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1441,10 +1440,6 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-left: 8px;
   letter-spacing: 0.03em;
 }
 
@@ -1452,6 +1447,15 @@ img {
   .checkbox-label {
     font-size: 12px;
     line-height: 1.16;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 8px;
   }
 }
 

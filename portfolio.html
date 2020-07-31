@@ -36,11 +36,11 @@
                             <li class="item"><a href="#" class="link">Контакты</a></li>
                         </ul>
                         
-                        <address>
+                        <address class="address-header">
                             <ul class="contacts">
                                 <li class="contacts-item">
                                     <a href="mailto:info@devstudio.com" class="contact-link">
-                                        <svg class="icon-contacts">
+                                        <svg class="icon-contacts" width="16" height="12">
                                             <use href="./images/sprite.svg#icon-envelope"></use>
                                         </svg>    
                                         info@devstudio.com
@@ -48,14 +48,14 @@
                                 </li>
                                 <li class="contacts-item">
                                     <a href="tel:+380961111111" class="contact-link">
-                                        <svg class="icon-contacts">
+                                        <svg class="icon-contacts" width="10" height="15">
                                             <use href="./images/sprite.svg#icon-Vector"></use>
                                         </svg>
                                         +38 096 111 11 11
                                     </a>           
                                 </li>
                             </ul>  
-                        </address> 
+                        </address>
                     </nav>     
                 </div>
             </div>
@@ -75,17 +75,39 @@
                     <li class="site-menu"> 
                         <a href="#" class="overlay">
                             <div class="picture">
-                                <img 
-                                    srcset="
-                                    ./images/Technokrjak-Mob.jpg 450w,
-                                    ./images/Technokrjak-Mob@2x.jpg 900w,
-                                    ./images/Technokrjak-Tab.jpg 354w,
-                                    ./images/Technokrjak-Tab@2x.jpg 708w,
-                                    ./images/Technokrjak-Desk.jpg 370w,
-                                    ./images/Technokrjak-Desk@2x.jpg 740w"
-                                    src="./images/Technokrjak-Mob.jpg" 
-                                    alt="Фото сотрудников"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw" />
+                                <picture>
+                                    <source srcset="
+                                        ./images/Technokrjak-Mob.jpg 1x,
+                                        ./images/Technokrjak-Mob@2x.jpg 2x"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Technokrjak-Mob.webp 1x,
+                                        ./images/Technokrjak-Mob@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Technokrjak-Desk.jpg 1x,
+                                        ./images/Technokrjak-Desk@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Technokrjak-Desk.webp 1x,
+                                        ./images/Technokrjak-Desk@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Technokrjak-Tab.jpg 1x,
+                                        ./images/Technokrjak-Tab@2x.jpg 2x"
+                                        media="(min-width: 768px)"/>
+                                    <source srcset="
+                                        ./images/Technokrjak-Tab.webp 1x,
+                                        ./images/Technokrjak-Tab@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 768px)"/>
+                                    <img src="./images/Technokrjak-Mob.jpg"
+                                        alt="Технокряк"
+                                        width="450"
+                                        height="294" />
+                                </picture>
                                 <div class="picture-overlay">
                                     <p class="works-desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -102,17 +124,39 @@
                     <li class="site-menu">
                         <a href="#" class="overlay">
                             <div class="picture">
-                                <img 
-                                    srcset="
-                                    ./images/Poster-Mob.jpg 450w,
-                                    ./images/Poster-Mob@2x.jpg 900w,
-                                    ./images/Poster-Tab.jpg 354w,
-                                    ./images/Poster-Tab@2x.jpg 708w,
-                                    ./images/Poster-Desk.jpg 370w,
-                                    ./images/Poster-Desk@2x.jpg 740w"
-                                    src="./images/Poster-Mob.jpg" 
-                                    alt="Постер с баскетболистами"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw" />
+                                <picture>
+                                    <source srcset="
+                                        ./images/Poster-Mob.jpg 1x,
+                                        ./images/Poster-Mob@2x.jpg 2x"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Poster-Mob.webp 1x,
+                                        ./images/Poster-Mob@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Poster-Desk.jpg 1x,
+                                        ./images/Poster-Desk@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Poster-Desk.webp 1x,
+                                        ./images/Poster-Desk@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Poster-Tab.jpg 1x,
+                                        ./images/Poster-Tab@2x.jpg 2x"
+                                        media="(min-width: 768px)"/>
+                                    <source srcset="
+                                        ./images/Poster-Tab.webp 1x,
+                                        ./images/Poster-Tab@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 768px)"/>
+                                    <img src="./images/Poster-Mob.jpg"
+                                        alt="Постер с баскетболистами"
+                                        width="450"
+                                        height="294" />
+                                </picture>
                                 <div class="picture-overlay">
                                     <p class="works-desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                  </div>
@@ -129,17 +173,39 @@
                     <li class="site-menu">
                         <a href="#" class="overlay">
                             <div class="picture">   
-                                <img 
-                                    srcset="
-                                    ./images/Seafood-Mob.jpg 450w,
-                                    ./images/Seafood-Mob@2x.jpg 900w,
-                                    ./images/Seafood-Tab.jpg 354w,
-                                    ./images/Seafood-Tab@2x.jpg 708w,
-                                    ./images/Seafood-Desk.jpg 370w,
-                                    ./images/Seafood-Desk@2x.jpg 740w"
-                                    src="./images/Seafood-Mob.jpg" 
-                                    alt="Реклама ресторана морепродукотв"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw" />
+                                <picture>
+                                    <source srcset="
+                                        ./images/Seafood-Mob.jpg 1x,
+                                        ./images/Seafood-Mob@2x.jpg 2x"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Seafood-Mob.webp 1x,
+                                        ./images/Seafood-Mob@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Seafood-Desk.jpg 1x,
+                                        ./images/Seafood-Desk@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Seafood-Desk.webp 1x,
+                                        ./images/Seafood-Desk@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Seafood-Tab.jpg 1x,
+                                        ./images/Seafood-Tab@2x.jpg 2x"
+                                        media="(min-width: 768px)"/>
+                                    <source srcset="
+                                        ./images/Seafood-Tab.webp 1x,
+                                        ./images/Seafood-Tab@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 768px)"/>
+                                    <img src="./images/Seafood-Mob.jpg"
+                                        alt="Ресторан морепродуктов"
+                                        width="450"
+                                        height="294" />
+                                </picture>
                                 <div class="picture-overlay">
                                     <p class="works-desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -156,17 +222,39 @@
                     <li class="site-menu">
                         <a href="#" class="overlay">
                             <div class="picture">
-                                <img 
-                                    srcset="
-                                    ./images/Prime-Mob.jpg 450w,
-                                    ./images/Prime-Mob@2x.jpg 900w,
-                                    ./images/Prime-Tab.jpg 354w,
-                                    ./images/Prime-Tab@2x.jpg 708w,
-                                    ./images/Prime-Desk.jpg 370w,
-                                    ./images/Prime-Desk@2x.jpg 740w"
-                                    src="./images/Prime-Mob.jpg" 
-                                    alt="Наушники"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw" />
+                                <picture>
+                                    <source srcset="
+                                        ./images/Prime-Mob.jpg 1x,
+                                        ./images/Prime-Mob@2x.jpg 2x"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Prime-Mob.webp 1x,
+                                        ./images/Prime-Mob@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Prime-Desk.jpg 1x,
+                                        ./images/Prime-Desk@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Prime-Desk.webp 1x,
+                                        ./images/Prime-Desk@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Prime-Tab.jpg 1x,
+                                        ./images/Prime-Tab@2x.jpg 2x"
+                                        media="(min-width: 768px)"/>
+                                    <source srcset="
+                                        ./images/Prime-Tab.webp 1x,
+                                        ./images/Prime-Tab@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 768px)"/>
+                                    <img src="./images/Prime-Mob.jpg"
+                                        alt="Наушники"
+                                        width="450"
+                                        height="294" />
+                                </picture>
                                 <div class="picture-overlay">
                                     <p class="works-desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -183,17 +271,39 @@
                     <li class="site-menu">
                         <a href="#" class="overlay">
                             <div class="picture">
-                                <img 
-                                    srcset="
-                                    ./images/Boxes-Mob.jpg 450w,
-                                    ./images/Boxes-Mob@2x.jpg 900w,
-                                    ./images/Boxes-Tab.jpg 354w,
-                                    ./images/Boxes-Tab@2x.jpg 708w,
-                                    ./images/Boxes-Desk.jpg 370w,
-                                    ./images/Boxes-Desk@2x.jpg 740w"
-                                    src="./images/Boxes-Mob.jpg" 
-                                    alt="2 коробки"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw" />
+                                <picture>
+                                    <source srcset="
+                                        ./images/Boxes-Mob.jpg 1x,
+                                        ./images/Boxes-Mob@2x.jpg 2x"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Boxes-Mob.webp 1x,
+                                        ./images/Boxes-Mob@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Boxes-Desk.jpg 1x,
+                                        ./images/Boxes-Desk@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Boxes-Desk.webp 1x,
+                                        ./images/Boxes-Desk@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Boxes-Tab.jpg 1x,
+                                        ./images/Boxes-Tab@2x.jpg 2x"
+                                        media="(min-width: 768px)"/>
+                                    <source srcset="
+                                        ./images/Boxes-Tab.webp 1x,
+                                        ./images/Boxes-Tab@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 768px)"/>
+                                    <img src="./images/Boxes-Mob.jpg"
+                                        alt="2 коробки"
+                                        width="450"
+                                        height="294" />
+                                </picture>
                                 <div class="picture-overlay">
                                     <p class="works-desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -210,17 +320,39 @@
                     <li class="site-menu">
                         <a href="#" class="overlay">
                             <div class="picture">
-                                <img 
-                                    srcset="
-                                    ./images/Inspiration-Mob.jpg 450w,
-                                    ./images/Inspiration-Mob@2x.jpg 900w,
-                                    ./images/Inspiration-Tab.jpg 354w,
-                                    ./images/Inspiration-Tab@2x.jpg 708w,
-                                    ./images/Inspiration-Desk.jpg 370w,
-                                    ./images/Inspiration-Desk@2x.jpg 740w"
-                                    src="./images/Inspiration-Mob.jpg" 
-                                    alt="Монитор"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw" />
+                                <picture>
+                                    <source srcset="
+                                        ./images/Inspiration-Mob.jpg 1x,
+                                        ./images/Inspiration-Mob@2x.jpg 2x"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Inspiration-Mob.webp 1x,
+                                        ./images/Inspiration-Mob@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Inspiration-Desk.jpg 1x,
+                                        ./images/Inspiration-Desk@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Inspiration-Desk.webp 1x,
+                                        ./images/Inspiration-Desk@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Inspiration-Tab.jpg 1x,
+                                        ./images/Inspiration-Tab@2x.jpg 2x"
+                                        media="(min-width: 768px)"/>
+                                    <source srcset="
+                                        ./images/Inspiration-Tab.webp 1x,
+                                        ./images/Inspiration-Tab@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 768px)"/>
+                                    <img src="./images/Inspiration-Mob.jpg"
+                                        alt="Монитор"
+                                        width="450"
+                                        height="294" />
+                                </picture>
                                 <div class="picture-overlay">
                                     <p class="works-desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -237,17 +369,39 @@
                     <li class="site-menu">
                         <a href="#" class="overlay">
                             <div class="picture">
-                                <img 
-                                    srcset="
-                                    ./images/Limited-Mob.jpg 450w,
-                                    ./images/Limited-Mob@2x.jpg 900w,
-                                    ./images/Limited-Tab.jpg 354w,
-                                    ./images/Limited-Tab@2x.jpg 708w,
-                                    ./images/Limited-Desk.jpg 370w,
-                                    ./images/Limited-Desk@2x.jpg 740w"
-                                    src="./images/Limited-Mob.jpg" 
-                                    alt="Журнал"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw" />
+                                <picture>
+                                    <source srcset="
+                                        ./images/Limited-Mob.jpg 1x,
+                                        ./images/Limited-Mob@2x.jpg 2x"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Limited-Mob.webp 1x,
+                                        ./images/Limited-Mob@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Limited-Desk.jpg 1x,
+                                        ./images/Limited-Desk@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Limited-Desk.webp 1x,
+                                        ./images/Limited-Desk@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Limited-Tab.jpg 1x,
+                                        ./images/Limited-Tab@2x.jpg 2x"
+                                        media="(min-width: 768px)"/>
+                                    <source srcset="
+                                        ./images/Limited-Tab.webp 1x,
+                                        ./images/Limited-Tab@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 768px)"/>
+                                    <img src="./images/Limited-Mob.jpg"
+                                        alt="Журнал"
+                                        width="450"
+                                        height="294" />
+                                </picture>
                                 <div class="picture-overlay">
                                     <p class="works-desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -264,17 +418,39 @@
                     <li class="site-menu">
                         <a href="#" class="overlay">
                             <div class="picture">
-                                <img 
-                                    srcset="
-                                    ./images/LAB-Mob.jpg 450w,
-                                    ./images/LAB-Mob@2x.jpg 900w,
-                                    ./images/LAB-Tab.jpg 354w,
-                                    ./images/LAB-Tab@2x.jpg 708w,
-                                    ./images/LAB-Desk.jpg 370w,
-                                    ./images/LAB-Desk@2x.jpg 740w"
-                                    src="./images/LAB-Mob.jpg" 
-                                    alt="Бирка"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw" />
+                                <picture>
+                                    <source srcset="
+                                        ./images/LAB-Mob.jpg 1x,
+                                        ./images/LAB-Mob@2x.jpg 2x"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/LAB-Mob.webp 1x,
+                                        ./images/LAB-Mob@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/LAB-Desk.jpg 1x,
+                                        ./images/LAB-Desk@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/LAB-Desk.webp 1x,
+                                        ./images/LAB-Desk@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/LAB-Tab.jpg 1x,
+                                        ./images/LAB-Tab@2x.jpg 2x"
+                                        media="(min-width: 768px)"/>
+                                    <source srcset="
+                                        ./images/LAB-Tab.webp 1x,
+                                        ./images/LAB-Tab@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 768px)"/>
+                                    <img src="./images/LAB-Mob.jpg"
+                                        alt="Бирка"
+                                        width="450"
+                                        height="294" />
+                                </picture>
                                 <div class="picture-overlay">
                                     <p class="works-desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -291,17 +467,39 @@
                     <li class="site-menu">
                         <a href="#" class="overlay">
                             <div class="picture">
-                                <img 
-                                    srcset="
-                                    ./images/Growing-Mob.jpg 450w,
-                                    ./images/Growing-Mob@2x.jpg 900w,
-                                    ./images/Growing-Tab.jpg 354w,
-                                    ./images/Growing-Tab@2x.jpg 708w,
-                                    ./images/Growing-Desk.jpg 370w,
-                                    ./images/Growing-Desk@2x.jpg 740w"
-                                    src="./images/Growing-Mob.jpg" 
-                                    alt="Печатающие руки"
-                                    sizes="(min-width: 1200px) 33vw, (min-width: 768px) 50vw, (min-width: 480px)  100vw" />
+                                <picture>
+                                    <source srcset="
+                                        ./images/Growing-Mob.jpg 1x,
+                                        ./images/Growing-Mob@2x.jpg 2x"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Growing-Mob.webp 1x,
+                                        ./images/Growing-Mob@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(max-width: 767px)"/>
+                                    <source srcset="
+                                        ./images/Growing-Desk.jpg 1x,
+                                        ./images/Growing-Desk@2x.jpg 2x"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Growing-Desk.webp 1x,
+                                        ./images/Growing-Desk@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 1200px)"/>
+                                    <source srcset="
+                                        ./images/Growing-Tab.jpg 1x,
+                                        ./images/Growing-Tab@2x.jpg 2x"
+                                        media="(min-width: 768px)"/>
+                                    <source srcset="
+                                        ./images/Growing-Tab.webp 1x,
+                                        ./images/Growing-Tab@2x.webp 2x"
+                                        type="image/webp"
+                                        media="(min-width: 768px)"/>
+                                    <img src="./images/Growing-Mob.jpg"
+                                        alt="Печатающие руки"
+                                        width="450"
+                                        height="294" />
+                                </picture>
                                 <div class="picture-overlay">
                                     <p class="works-desk">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового шпионажа и атак на защищённые сервера конкурентов.</p>
                                 </div>
@@ -326,7 +524,7 @@
                         <span class="logo-web">Web</span> 
                         <span class="logo-footer">Studio</span>
                     </a>
-                    <address>
+                    <address class="address-footer">
                         <ul>
                             <li class="adress-link"><p class="aside">г. Киев, пр-т Леси Украинки, 26</p></li>
                             <li class="adress-link"><a href="mailto:info@example.com" class="link-footer">info@example.com</a><br /></li>

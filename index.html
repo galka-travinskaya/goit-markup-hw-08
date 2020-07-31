@@ -135,8 +135,17 @@
                         <li class="site-menu">
                             <picture>
                                 <a href="#">
-                                    <source srcset="./images/Growing-Desk.webp" type="image/webp"/>
-                                    <img src="./images/Growing-Desk.jpg" alt="Открытый ноутбук" width="370" height="294"/>
+                                    <source srcset="
+                                        ./images/Growing-Desk.webp 1x,
+                                        ./images/Growing-Desk@2x.webp 2x" 
+                                        type="image/webp"/>
+                                    <source srcset="
+                                        ./images/Growing-Desk.jpg 1x,
+                                        ./images/Growing-Desk@2x.jpg 2x"/>    
+                                    <img src="./images/Growing-Desk.jpg" 
+                                        alt="Открытый ноутбук" 
+                                        width="370" 
+                                        height="294"/>
                                 </a>
                             </picture>
                             <h3 class="item-title">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
@@ -144,8 +153,17 @@
                         <li class="site-menu">
                             <picture>
                                 <a href="#">
-                                    <source srcset="./images/Box-Desk.webp" type="image/webp"/>
-                                    <img src="./images/Box-Desk.jpg" alt="Открытый ноутбук" width="370" height="294"/>
+                                    <source srcset="
+                                        ./images/Box-Desk.webp 1x,
+                                        ./images/Box-Desk@2x.webp 2x" 
+                                        type="image/webp"/>
+                                    <source srcset="
+                                        ./images/Box-Desk.jpg 1x,
+                                        ./images/Box-Desk@2x.jpg 2x"/>    
+                                    <img src="./images/Box-Desk.jpg" 
+                                        alt="Открытый ноутбук" 
+                                        width="370" 
+                                        height="294"/>
                                 </a>
                             </picture>
                             <h3 class="item-title">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3> 
@@ -153,8 +171,17 @@
                         <li class="site-menu">
                             <picture>
                                 <a href="#">
-                                    <source srcset="./images/Inspiration-Desk.webp" type="image/webp"/>
-                                    <img src="./images/Inspiration-Desk.jpg" alt="Открытый ноутбук" width="370" height="294"/>
+                                    <source srcset="
+                                        ./images/Inspiration-Desk.webp 1x
+                                        ./images/Inspiration-Desk@2x.webp 2x" 
+                                        type="image/webp"/>
+                                    <source srcset="
+                                        ./images/Inspiration-Desk.jpg 1x,
+                                        ./images/Inspiration-Desk@2x.jpg 2x"/>    
+                                    <img src="./images/Inspiration-Desk.jpg" 
+                                        alt="Открытый ноутбук" 
+                                        width="370" 
+                                        height="294"/>
                                 </a>
                             </picture>
                             <h3 class="item-title">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
@@ -168,19 +195,39 @@
                     <h2 class="section-title">Наша команда</h2>
                     <ul class="team-cards">
                         <li class="cards-item">
-                            <img 
-                                srcset="
+                            <picture>
+                                <source srcset="
                                     ./images/JohnSmith-Mob.jpg 1x,
-                                    ./images/JohnSmith-Mob@2x.jpg 2x,
-                                    ./images/JohnSmith-Tab.jpg 1x,
-                                    ./images/JohnSmith-Tab@2x.jpg 2x,
+                                    ./images/JohnSmith-Mob@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+                                <source srcset="
+                                    ./images/JohnSmith-Mob.webp 1x,
+                                    ./images/JohnSmith-Mob@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(max-width: 767px)"/>
+                                <source srcset="
                                     ./images/JohnSmith-Desk.jpg 1x,
                                     ./images/JohnSmith-Desk@2x.jpg 2x"
-
-                                    src="./images/JohnSmith-Mob.jpg"
+                                    media="(min-width: 1200px)"/>
+                                <source srcset="
+                                    ./images/JohnSmith-Desk.webp 1x,
+                                    ./images/JohnSmith-Desk@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(min-width: 1200px)"/>
+                                <source srcset="
+                                    ./images/JohnSmith-Tab.jpg 1x,
+                                    ./images/JohnSmith-Tab@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+                                <source srcset="
+                                    ./images/JohnSmith-Tab.webp 1x,
+                                    ./images/JohnSmith-Tab@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(min-width: 768px)"/>
+                                <img src="./images/JohnSmith-Mob.jpg"
                                     alt="Фотография Джона Смита"
                                     width="450"
                                     height="320" />
+                            </picture>
                             <div class="team-content">
                                 <h3 class="headline">Николай Кучеренко</h3>
                                 <p class="text">
@@ -219,19 +266,39 @@
                             </div>
                         </li>
                         <li class="cards-item">
-                            <img 
-                                srcset="
+                            <picture>
+                                <source srcset="
                                     ./images/MartaStewart-Mob.jpg 1x,
-                                    ./images/MartaStewart-Mob@2x.jpg 2x,
-                                    ./images/MartaStewart-Tab.jpg 1x,
-                                    ./images/MartaStewart-Tab@2x.jpg 2x,
+                                    ./images/MartaStewart-Mob@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+                                <source srcset="
+                                    ./images/MartaStewart-Mob.webp 1x,
+                                    ./images/MartaStewart-Mob@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(max-width: 767px)"/>
+                                <source srcset="
                                     ./images/MartaStewart-Desk.jpg 1x,
                                     ./images/MartaStewart-Desk@2x.jpg 2x"
-
-                                    src="./images/MartaStewart-Mob.jpg"
+                                    media="(min-width: 1200px)"/>
+                                <source srcset="
+                                    ./images/MartaStewart-Desk.webp 1x,
+                                    ./images/MartaStewart-Desk@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(min-width: 1200px)"/>
+                                <source srcset="
+                                    ./images/MartaStewart-Tab.jpg 1x,
+                                    ./images/MartaStewart-Tab@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+                                <source srcset="
+                                    ./images/MartaStewart-Tab.webp 1x,
+                                    ./images/MartaStewart-Tab@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(min-width: 768px)"/>
+                                <img src="./images/MartaStewart-Mob.jpg"
                                     alt="Фотография Ольги Ивановой"
                                     width="450"
                                     height="320" />
+                            </picture>
                             <div class="team-content">
                                 <h3 class="headline">Ольга Иванова</h3>
                                 <p class="text">
@@ -270,19 +337,39 @@
                             </div>  
                         </li>
                         <li class="cards-item">
-                            <img 
-                                srcset="
+                            <picture>
+                                <source srcset="
                                     ./images/RobertJakis-Mob.jpg 1x,
-                                    ./images/RobertJakis-Mob@2x.jpg 2x,
-                                    ./images/RobertJakis-Tab.jpg 1x,
-                                    ./images/RobertJakis-Tab@2x.jpg 2x,
+                                    ./images/RobertJakis-Mob@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+                                <source srcset="
+                                    ./images/RobertJakis-Mob.webp 1x,
+                                    ./images/RobertJakis-Mob@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(max-width: 767px)"/>
+                                <source srcset="
                                     ./images/RobertJakis-Desk.jpg 1x,
                                     ./images/RobertJakis-Desk@2x.jpg 2x"
-
-                                    src="./images/RobertJakis-Mob.jpg"
+                                    media="(min-width: 1200px)"/>
+                                <source srcset="
+                                    ./images/RobertJakis-Desk.webp 1x,
+                                    ./images/RobertJakis-Desk@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(min-width: 1200px)"/>
+                                <source srcset="
+                                    ./images/RobertJakis-Tab.jpg 1x,
+                                    ./images/RobertJakis-Tab@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+                                <source srcset="
+                                    ./images/RobertJakis-Tab.webp 1x,
+                                    ./images/RobertJakis-Tab@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(min-width: 768px)"/>
+                                <img src="./images/RobertJakis-Mob.jpg"
                                     alt="Фотография Андрея Шевченко"
                                     width="450"
                                     height="320" />
+                            </picture>
                             <div class="team-content">
                                 <h3 class="headline">Андрей Шевченко</h3>
                                 <p class="text">
@@ -321,19 +408,39 @@
                             </div>  
                         </li>
                         <li class="cards-item">
-                            <img 
-                                srcset="
+                            <picture>
+                                <source srcset="
                                     ./images/MartinDoe-Mob.jpg 1x,
-                                    ./images/MartinDoe-Mob@2x.jpg 2x,
-                                    ./images/MartinDoe-Tab.jpg 1x,
-                                    ./images/MartinDoe-Tab@2x.jpg 2x,
+                                    ./images/MartinDoe-Mob@2x.jpg 2x"
+                                    media="(max-width: 767px)"/>
+                                <source srcset="
+                                    ./images/MartinDoe-Mob.webp 1x,
+                                    ./images/MartinDoe-Mob@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(max-width: 767px)"/>
+                                <source srcset="
                                     ./images/MartinDoe-Desk.jpg 1x,
                                     ./images/MartinDoe-Desk@2x.jpg 2x"
-
-                                    src="./images/MartinDoe-Mob.jpg"
+                                    media="(min-width: 1200px)"/>
+                                <source srcset="
+                                    ./images/MartinDoe-Desk.webp 1x,
+                                    ./images/MartinDoe-Desk@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(min-width: 1200px)"/>
+                                <source srcset="
+                                    ./images/MartinDoe-Tab.jpg 1x,
+                                    ./images/MartinDoe-Tab@2x.jpg 2x"
+                                    media="(min-width: 768px)"/>
+                                <source srcset="
+                                    ./images/MartinDoe-Tab.webp 1x,
+                                    ./images/MartinDoe-Tab@2x.webp 2x"
+                                    type="image/webp"
+                                    media="(min-width: 768px)"/>
+                                <img src="./images/MartinDoe-Mob.jpg"
                                     alt="Фотография Ивана Николаева"
                                     width="450"
                                     height="320" />
+                            </picture>
                             <div class="team-content">
                                 <h3 class="headline">Иван Николаев</h3>
                                 <p class="text">

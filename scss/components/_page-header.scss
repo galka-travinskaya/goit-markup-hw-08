@@ -77,6 +77,7 @@
 
 .menu-button:hover svg,
 .menu-button:focus svg {
+    outline: none;
     fill: $accent-color;
 }
 
@@ -171,7 +172,7 @@
 }
 
 .contacts-item {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
 }
 
@@ -190,7 +191,7 @@
 }
 
 .icon-contacts {
-    display: inline-flex;
+    display: inline-block;
     fill: $primary-text-color;
     align-items: center;
 
