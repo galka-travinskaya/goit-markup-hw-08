@@ -11,7 +11,10 @@
 .footer-list {
     display: flex;
     align-items: center;
-    justify-content: center;
+
+    @media screen and (max-width: 1199px) {
+        justify-content: center;
+    }
 }
 
 .footer-icon a {

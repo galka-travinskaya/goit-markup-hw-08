@@ -691,7 +691,12 @@ img {
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -706,6 +711,7 @@ img {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    text-align: center;
   }
 }
 
@@ -724,8 +730,10 @@ img {
   }
 }
 
-.adress-box {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .adress-box {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -792,9 +800,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-icon a {
@@ -846,7 +859,12 @@ img {
 .footer-container {
   padding-top: 60px;
   padding-bottom: 60px;
-  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .footer-container {
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -861,6 +879,7 @@ img {
             align-items: center;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    text-align: center;
   }
 }
 
@@ -879,8 +898,10 @@ img {
   }
 }
 
-.adress-box {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .adress-box {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -947,9 +968,14 @@ img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .footer-icon a {
