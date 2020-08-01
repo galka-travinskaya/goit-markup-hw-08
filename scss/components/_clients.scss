@@ -15,8 +15,7 @@
         border: 1px solid #AFB1B8;
         border-radius: 4px;
     
-        transition: border-color 250ms $transition-timing-function;
-        color: 250ms $transition-timing-function;
+        transition: border-color 250ms $transition-timing-function, color 250ms $transition-timing-function;
         
         @media screen and (max-width: 767px) {
             width: calc((100% - 60px) / 2);
