@@ -198,6 +198,7 @@
         width: 16px;
         height: 15px;
         margin-right: 7px;
+        flex-shrink: 0;
         content: "";
         background-image: url(../images/check.svg);
         border: 2px solid $title-text-color;
@@ -213,7 +214,8 @@
 }
 
 .checkbox-label {
-    display: flex;
+    display: inline-flex;
+    align-items: center;
     letter-spacing: 0.03em;
 
     @media screen and (max-width: 1199px) {
@@ -222,7 +224,7 @@
     }
 
     @media screen and (min-width: 1200px) {
-        align-items: center;
+        
         margin-left: 8px;
     }
 
